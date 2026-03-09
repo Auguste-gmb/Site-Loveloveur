@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lovélo Rouen — Balades à vélo</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- NAV -->
+		<header id="navbar">
+			<a href="#hero" class="nav-logo">
+				<img src="logo.png" alt="Lovélo" />
+			</a>
+
+			<!-- Desktop -->
+			<nav class="nav-desktop">
+				<a href="#about">Projet</a>
+				<a href="#routes">Balades</a>
+				<a href="#app">Application</a>
+				<a href="#team">Équipe</a>
+				<a href="#questionnaire" class="nav-cta">Participer</a>
+			</nav>
+
+			<!-- Burger -->
+			<button class="burger" id="burger" aria-label="Menu">
+				<span></span><span></span><span></span>
+			</button>
+		</header>
+
+		<!-- Mobile overlay -->
+		<div class="nav-overlay" id="nav-overlay">
+			<button class="overlay-close" id="overlay-close">✕</button>
+			<a href="#about">Projet</a>
+			<a href="#routes">Balades</a>
+			<a href="#app">Application</a>
+			<a href="#team">Équipe</a>
+			<a href="#questionnaire">Participer</a>
+		</div>
+
+		<!-- HERO -->
+		<section id="hero">
+			<div class="hero-grid">
+				<div class="hero-content">
+					<div class="hero-tag">
+						<svg width="8" height="8" viewBox="0 0 8 8">
+							<circle cx="4" cy="4" r="4" fill="currentColor" />
+						</svg>
+						Projet citoyen · Rouen
+					</div>
+					<h1>Explore Rouen<br /><em>à vélo</em></h1>
+					<p class="hero-sub">
+						Découvrez l'architecture, l'histoire et les secrets de
+						la métropole rouennaise grâce aux Lovélo — le vélo en
+						libre-service de Rouen.
+					</p>
+					<div class="hero-btns">
+						<a href="#routes" class="btn-primary">
+							Voir les balades
+							<svg
+								width="16"
+								height="16"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2.5"
+								viewBox="0 0 24 24"
+							>
+								<path d="M5 12h14M12 5l7 7-7 7" />
+							</svg>
+						</a>
+						<a href="#questionnaire" class="btn-ghost"
+							>Donner mon avis</a
+						>
+					</div>
+					<div class="hero-stats">
+						<div class="stat-item">
+							<span class="stat-num">3+</span>
+							<span class="stat-label">Tracés</span>
+						</div>
+						<div class="stat-divider"></div>
+						<div class="stat-item">
+							<span class="stat-num">100%</span>
+							<span class="stat-label">Éco-responsable</span>
+						</div>
+						<div class="stat-divider"></div>
+						<div class="stat-item">
+							<span class="stat-num">0€</span>
+							<span class="stat-label">Accès libre</span>
+						</div>
+					</div>
+				</div>
+				<div class="hero-visual">
+					<div class="hero-blob"></div>
+					<div class="hero-logo-wrap">
+						<img src="logo.png" alt="Lovélo" class="hero-logo" />
+						<div class="hero-orbit hero-orbit-1"></div>
+						<div class="hero-orbit hero-orbit-2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="hero-scroll-hint">
+				<span>Découvrir</span>
+				<svg
+					width="20"
+					height="20"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path d="M12 5v14M5 12l7 7 7-7" />
+				</svg>
+			</div>
+		</section>
+
+		<!-- ABOUT -->
+		<section id="about" class="section-dark">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">Notre mission</span>
+					<h2>Rouler, découvrir,<br />partager</h2>
+					<p class="section-sub">
+						Un projet citoyen né de l'envie de rendre Rouen plus
+						accessible, plus verte et plus vivante grâce au vélo.
+					</p>
+				</div>
+				<div class="pillars-grid">
+					<div class="pillar fade-up">
+						<div class="pillar-icon">🗺️</div>
+						<h3>Découverte</h3>
+						<p>
+							Des tracés qui mettent en valeur l'architecture
+							gothique, les bords de Seine et les quartiers
+							méconnus de Rouen.
+						</p>
+					</div>
+					<div class="pillar fade-up" style="--delay: 0.1s">
+						<div class="pillar-icon">🚲</div>
+						<h3>Mobilité douce</h3>
+						<p>
+							En partenariat avec les Lovélo, nous encourageons un
+							transport urbain accessible à tous, sans voiture.
+						</p>
+					</div>
+					<div class="pillar fade-up" style="--delay: 0.2s">
+						<div class="pillar-icon">🌱</div>
+						<h3>Éco-responsabilité</h3>
+						<p>
+							Chaque balade est une action concrète pour réduire
+							les émissions et adopter un mode de vie plus
+							durable.
+						</p>
+					</div>
+					<div class="pillar fade-up" style="--delay: 0.3s">
+						<div class="pillar-icon">🤝</div>
+						<h3>Lien social</h3>
+						<p>
+							Des sorties collectives pour rencontrer de nouvelles
+							personnes et créer du lien autour du vélo.
+						</p>
+					</div>
+				</div>
+				<div class="about-quote fade-up">
+					<blockquote>
+						"Inspirés des Lovélo de Rouen, nous avons voulu créer un
+						outil qui encourage les habitants et visiteurs à
+						explorer la ville à vélo, tout en découvrant son
+						architecture, son histoire et ses secrets."
+					</blockquote>
+					<span class="quote-attr"
+						>— L'équipe Lovélo, cycle ingénieur</span
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- ROUTES -->
+		<section id="routes" class="section-light">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">Explorer</span>
+					<h2>Nos tracés</h2>
+					<p class="section-sub">
+						Trois balades conçues pour tous les niveaux, à parcourir
+						seul ou en groupe avec un Lovélo.
+					</p>
+				</div>
+				<div class="routes-grid">
+					<div class="route-card fade-up">
+						<div class="route-thumb route-thumb-1">
+							<svg
+								viewBox="0 0 400 180"
+								preserveAspectRatio="xMidYMid slice"
+							>
+								<defs>
+									<linearGradient
+										id="g1"
+										x1="0"
+										y1="0"
+										x2="1"
+										y2="1"
+									>
+										<stop
+											offset="0%"
+											stop-color="#fce4ec"
+										/>
+										<stop
+											offset="100%"
+											stop-color="#f8bbd0"
+										/>
+									</linearGradient>
+								</defs>
+								<rect
+									width="400"
+									height="180"
+									fill="url(#g1)"
+								/>
+								<path
+									d="M0 130 Q80 70 160 100 Q240 130 320 80 Q360 60 400 70"
+									stroke="#b00457"
+									stroke-width="3.5"
+									fill="none"
+									stroke-dasharray="10 5"
+									opacity=".6"
+								/>
+								<circle
+									cx="30"
+									cy="133"
+									r="7"
+									fill="#b00457"
+									opacity=".7"
+								/>
+								<circle
+									cx="160"
+									cy="100"
+									r="7"
+									fill="#b00457"
+									opacity=".7"
+								/>
+								<circle
+									cx="380"
+									cy="70"
+									r="7"
+									fill="#b00457"
+									opacity=".7"
+								/>
+								<text
+									x="10"
+									y="155"
+									fill="#b00457"
+									font-size="11"
+									opacity=".7"
+									font-family="Inter,sans-serif"
+									font-weight="500"
+								>
+									Vieux-Marché
+								</text>
+								<text
+									x="135"
+									y="93"
+									fill="#b00457"
+									font-size="11"
+									opacity=".7"
+									font-family="Inter,sans-serif"
+									font-weight="500"
+								>
+									Cathédrale
+								</text>
+								<text
+									x="322"
+									y="63"
+									fill="#b00457"
+									font-size="11"
+									opacity=".7"
+									font-family="Inter,sans-serif"
+									font-weight="500"
+								>
+									St-Maclou
+								</text>
+							</svg>
+							<span class="route-badge badge-easy">Facile</span>
+						</div>
+						<div class="route-body">
+							<h3 class="route-name">Cœur historique</h3>
+							<div class="route-meta">
+								<span>📍 8 km</span>
+								<span>⏱ ~40 min</span>
+								<span>📈 Plat</span>
+							</div>
+							<p>
+								Un tour du Vieux-Rouen entre la Place du
+								Vieux-Marché, la Cathédrale Notre-Dame et
+								l'Église Saint-Maclou.
+							</p>
+						</div>
+					</div>
+
+					<div class="route-card fade-up" style="--delay: 0.15s">
+						<div class="route-thumb route-thumb-2">
+							<svg
+								viewBox="0 0 400 180"
+								preserveAspectRatio="xMidYMid slice"
+							>
+								<defs>
+									<linearGradient
+										id="g2"
+										x1="0"
+										y1="0"
+										x2="1"
+										y2="1"
+									>
+										<stop
+											offset="0%"
+											stop-color="#ede7f6"
+										/>
+										<stop
+											offset="100%"
+											stop-color="#d1c4e9"
+										/>
+									</linearGradient>
+								</defs>
+								<rect
+									width="400"
+									height="180"
+									fill="url(#g2)"
+								/>
+								<rect
+									x="0"
+									y="140"
+									width="400"
+									height="40"
+									fill="#472977"
+									opacity=".1"
+								/>
+								<path
+									d="M0 145 Q100 110 180 90 Q260 70 320 95 Q360 110 400 85"
+									stroke="#472977"
+									stroke-width="3.5"
+									fill="none"
+									stroke-dasharray="10 5"
+									opacity=".6"
+								/>
+								<circle
+									cx="20"
+									cy="147"
+									r="7"
+									fill="#472977"
+									opacity=".7"
+								/>
+								<circle
+									cx="180"
+									cy="90"
+									r="7"
+									fill="#472977"
+									opacity=".7"
+								/>
+								<circle
+									cx="390"
+									cy="85"
+									r="7"
+									fill="#472977"
+									opacity=".7"
+								/>
+								<text
+									x="5"
+									y="165"
+									fill="#472977"
+									font-size="11"
+									opacity=".7"
+									font-family="Inter,sans-serif"
+									font-weight="500"
+								>
+									Port
+								</text>
+								<text
+									x="155"
+									y="82"
+									fill="#472977"
+									font-size="11"
+									opacity=".7"
+									font-family="Inter,sans-serif"
+									font-weight="500"
+								>
+									Bonsecours
+								</text>
+							</svg>
+							<span class="route-badge badge-medium"
+								>Intermédiaire</span
+							>
+						</div>
+						<div class="route-body">
+							<h3 class="route-name">Bords de Seine</h3>
+							<div class="route-meta">
+								<span>📍 14 km</span>
+								<span>⏱ ~1h10</span>
+								<span>📈 Léger</span>
+							</div>
+							<p>
+								Longe la Seine depuis le Port de Rouen jusqu'aux
+								hauteurs de Bonsecours avec une vue panoramique.
+							</p>
+						</div>
+					</div>
+
+					<div class="route-card fade-up" style="--delay: 0.3s">
+						<div class="route-thumb route-thumb-3">
+							<svg
+								viewBox="0 0 400 180"
+								preserveAspectRatio="xMidYMid slice"
+							>
+								<defs>
+									<linearGradient
+										id="g3"
+										x1="0"
+										y1="0"
+										x2="1"
+										y2="1"
+									>
+										<stop
+											offset="0%"
+											stop-color="#fce4ec"
+										/>
+										<stop
+											offset="100%"
+											stop-color="#ede7f6"
+										/>
+									</linearGradient>
+								</defs>
+								<rect
+									width="400"
+									height="180"
+									fill="url(#g3)"
+								/>
+								<path
+									d="M20 160 Q60 110 100 120 Q140 130 180 70 Q220 20 260 50 Q300 80 340 40 Q370 15 395 30"
+									stroke="url(#grad-route)"
+									stroke-width="3.5"
+									fill="none"
+									stroke-dasharray="10 5"
+									opacity=".7"
+								/>
+								<defs>
+									<linearGradient
+										id="grad-route"
+										x1="0"
+										y1="0"
+										x2="1"
+										y2="0"
+									>
+										<stop
+											offset="0%"
+											stop-color="#b00457"
+										/>
+										<stop
+											offset="100%"
+											stop-color="#472977"
+										/>
+									</linearGradient>
+								</defs>
+								<circle
+									cx="20"
+									cy="160"
+									r="7"
+									fill="#b00457"
+									opacity=".7"
+								/>
+								<circle
+									cx="180"
+									cy="70"
+									r="7"
+									fill="#6e3aab"
+									opacity=".7"
+								/>
+								<circle
+									cx="395"
+									cy="30"
+									r="7"
+									fill="#472977"
+									opacity=".7"
+								/>
+								<text
+									x="3"
+									y="175"
+									fill="#b00457"
+									font-size="11"
+									opacity=".7"
+									font-family="Inter,sans-serif"
+									font-weight="500"
+								>
+									Centre
+								</text>
+								<text
+									x="330"
+									y="23"
+									fill="#472977"
+									font-size="11"
+									opacity=".7"
+									font-family="Inter,sans-serif"
+									font-weight="500"
+								>
+									Bellevue
+								</text>
+							</svg>
+							<span class="route-badge badge-hard">Sportif</span>
+						</div>
+						<div class="route-body">
+							<h3 class="route-name">Les Hauteurs</h3>
+							<div class="route-meta">
+								<span>📍 22 km</span>
+								<span>⏱ ~1h45</span>
+								<span>📈 Vallonné</span>
+							</div>
+							<p>
+								Un défi pour les amateurs : grimpez vers
+								Canteleu et Bellevue pour une vue à 360° sur la
+								vallée de la Seine.
+							</p>
+						</div>
+					</div>
+				</div>
+				<p class="routes-coming">
+					<span
+						>🗺️ D'autres tracés arrivent prochainement avec
+						l'application</span
+					>
+				</p>
+			</div>
+		</section>
+
+		<!-- APP -->
+		<section id="app" class="section-gradient">
+			<div class="container app-container">
+				<div class="app-text fade-up">
+					<span class="section-label section-label-white"
+						>Bientôt disponible</span
+					>
+					<h2>L'application <br />Lovélo Rouen</h2>
+					<p>
+						Planifiez vos balades, suivez vos tracés en temps réel
+						et rejoignez des groupes de cyclistes directement depuis
+						votre téléphone.
+					</p>
+					<ul class="app-features">
+						<li>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2.5"
+							>
+								<polyline points="20 6 9 17 4 12" />
+							</svg>
+							Tracés GPS pré-définis
+						</li>
+						<li>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2.5"
+							>
+								<polyline points="20 6 9 17 4 12" />
+							</svg>
+							Sorties groupées à rejoindre
+						</li>
+						<li>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2.5"
+							>
+								<polyline points="20 6 9 17 4 12" />
+							</svg>
+							Stations Lovélo à proximité
+						</li>
+						<li>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2.5"
+							>
+								<polyline points="20 6 9 17 4 12" />
+							</svg>
+							Points d'intérêt sur les parcours
+						</li>
+					</ul>
+					<div class="app-badges">
+						<a
+							href="#app"
+							class="app-badge"
+							title="Bientôt sur l'App Store"
+						>
+							<svg
+								viewBox="0 0 24 24"
+								width="28"
+								height="28"
+								fill="currentColor"
+							>
+								<path
+									d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+								/>
+							</svg>
+							<div>
+								<span class="app-badge-sub">Bientôt sur</span>
+								<span class="app-badge-name">App Store</span>
+							</div>
+						</a>
+						<a
+							href="#app"
+							class="app-badge"
+							title="Bientôt sur Google Play"
+						>
+							<svg
+								viewBox="0 0 24 24"
+								width="28"
+								height="28"
+								fill="currentColor"
+							>
+								<path
+									d="M3.18 23.76c.35.2.76.22 1.14.09l12.1-6.99-2.56-2.56L3.18 23.76zm-1.52-20.4A1.51 1.51 0 001.5 4.5v15c0 .44.18.85.49 1.14l.07.06 8.4-8.4v-.2L1.73 3.42l-.07.06-.07.08zm19.45 8.8l-2.6-1.5-2.88 2.88 2.88 2.88 2.62-1.51a1.51 1.51 0 000-2.62l-.02-.13zM4.32.15C3.94.02 3.53.04 3.18.24L14.07 11.13l-2.56-2.56L4.32.15z"
+								/>
+							</svg>
+							<div>
+								<span class="app-badge-sub">Bientôt sur</span>
+								<span class="app-badge-name">Google Play</span>
+							</div>
+						</a>
+					</div>
+					<p class="app-notice">
+						🔔 Application en cours de développement — revenez
+						bientôt !
+					</p>
+				</div>
+				<div class="app-phone fade-up" style="--delay: 0.2s">
+					<div class="phone-mockup">
+						<div class="phone-notch"></div>
+						<div class="phone-screen">
+							<div class="phone-screen-header">
+								<img
+									src="logo.png"
+									alt="Lovélo"
+									style="
+										height: 32px;
+										filter: brightness(0) invert(1);
+									"
+								/>
+							</div>
+							<div class="phone-map-placeholder">
+								<svg
+									viewBox="0 0 200 280"
+									width="100%"
+									height="100%"
+								>
+									<rect
+										width="200"
+										height="280"
+										fill="#1a1a1a"
+									/>
+									<!-- fake map grid -->
+									<line
+										x1="0"
+										y1="70"
+										x2="200"
+										y2="70"
+										stroke="#2a2a2a"
+										stroke-width="1"
+									/>
+									<line
+										x1="0"
+										y1="140"
+										x2="200"
+										y2="140"
+										stroke="#2a2a2a"
+										stroke-width="1"
+									/>
+									<line
+										x1="0"
+										y1="210"
+										x2="200"
+										y2="210"
+										stroke="#2a2a2a"
+										stroke-width="1"
+									/>
+									<line
+										x1="50"
+										y1="0"
+										x2="50"
+										y2="280"
+										stroke="#2a2a2a"
+										stroke-width="1"
+									/>
+									<line
+										x1="100"
+										y1="0"
+										x2="100"
+										y2="280"
+										stroke="#2a2a2a"
+										stroke-width="1"
+									/>
+									<line
+										x1="150"
+										y1="0"
+										x2="150"
+										y2="280"
+										stroke="#2a2a2a"
+										stroke-width="1"
+									/>
+									<!-- route path -->
+									<path
+										d="M20 240 Q60 180 100 160 Q140 140 170 80"
+										stroke="#b00457"
+										stroke-width="4"
+										fill="none"
+										stroke-linecap="round"
+									/>
+									<circle
+										cx="20"
+										cy="240"
+										r="6"
+										fill="#b00457"
+									/>
+									<circle
+										cx="170"
+										cy="80"
+										r="6"
+										fill="#472977"
+									/>
+									<!-- pin -->
+									<circle
+										cx="100"
+										cy="160"
+										r="8"
+										fill="#b00457"
+										opacity=".8"
+									/>
+									<circle
+										cx="100"
+										cy="160"
+										r="3"
+										fill="white"
+									/>
+								</svg>
+							</div>
+							<div class="phone-bar">
+								<span>Cœur historique</span>
+								<span class="phone-bar-dist">8 km →</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TEAM -->
+		<section id="team" class="section-light">
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">L'équipe</span>
+					<h2>Qui sommes-nous ?</h2>
+					<p class="section-sub">
+						Des étudiants en cycle ingénieur, portés par la
+						conviction que la mobilité douce peut transformer nos
+						villes.
+					</p>
+				</div>
+				<div class="team-grid">
+					<div class="team-card fade-up">
+						<div
+							class="team-avatar"
+							style="
+								background: linear-gradient(
+									135deg,
+									#b00457,
+									#d4006a
+								);
+							"
+						>
+							A
+						</div>
+						<div class="team-name">Membre 1</div>
+						<div class="team-role">Chef de projet</div>
+					</div>
+					<div class="team-card fade-up" style="--delay: 0.1s">
+						<div
+							class="team-avatar"
+							style="
+								background: linear-gradient(
+									135deg,
+									#472977,
+									#6a3aa0
+								);
+							"
+						>
+							B
+						</div>
+						<div class="team-name">Membre 2</div>
+						<div class="team-role">Design & UX</div>
+					</div>
+					<div class="team-card fade-up" style="--delay: 0.2s">
+						<div
+							class="team-avatar"
+							style="
+								background: linear-gradient(
+									135deg,
+									#7b2f8a,
+									#b00457
+								);
+							"
+						>
+							C
+						</div>
+						<div class="team-name">Membre 3</div>
+						<div class="team-role">Développement</div>
+					</div>
+					<div class="team-card fade-up" style="--delay: 0.3s">
+						<div
+							class="team-avatar"
+							style="
+								background: linear-gradient(
+									135deg,
+									#472977,
+									#b00457
+								);
+							"
+						>
+							D
+						</div>
+						<div class="team-name">Membre 4</div>
+						<div class="team-role">Communication</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- QUESTIONNAIRE -->
+		<section
+			id="questionnaire"
+			class="section-light"
+			style="background: #f9f5ff"
+		>
+			<div class="container">
+				<div class="section-header">
+					<span class="section-label">Participez</span>
+					<h2>Donnez votre avis</h2>
+					<p class="section-sub">
+						Votre retour nous aide à construire un projet qui
+						correspond aux besoins des habitants de Rouen.
+					</p>
+				</div>
+				<div class="form-wrapper fade-up">
+					<form id="survey-form">
+						<div class="form-group">
+							<label for="f-name">Votre prénom</label>
+							<input
+								type="text"
+								id="f-name"
+								placeholder="ex : Marie"
+							/>
+						</div>
+						<div class="form-group">
+							<label>Utilisez-vous un vélo en ville ?</label>
+							<div class="radio-group">
+								<label class="radio-pill"
+									><input
+										type="radio"
+										name="bike"
+										value="often"
+									/>
+									Souvent</label
+								>
+								<label class="radio-pill"
+									><input
+										type="radio"
+										name="bike"
+										value="sometimes"
+									/>
+									Parfois</label
+								>
+								<label class="radio-pill"
+									><input
+										type="radio"
+										name="bike"
+										value="rarely"
+									/>
+									Rarement</label
+								>
+								<label class="radio-pill"
+									><input
+										type="radio"
+										name="bike"
+										value="never"
+									/>
+									Jamais</label
+								>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Connaissiez-vous le service Lovélo ?</label>
+							<div class="radio-group">
+								<label class="radio-pill"
+									><input
+										type="radio"
+										name="lovelo"
+										value="yes"
+									/>
+									Oui, utilisateur·rice</label
+								>
+								<label class="radio-pill"
+									><input
+										type="radio"
+										name="lovelo"
+										value="know"
+									/>
+									Oui, pas utilisé</label
+								>
+								<label class="radio-pill"
+									><input
+										type="radio"
+										name="lovelo"
+										value="no"
+									/>
+									Non</label
+								>
+							</div>
+						</div>
+						<div class="form-group">
+							<label
+								>Ce qui vous motiverait à rejoindre une balade
+								<span class="label-hint"
+									>(plusieurs choix)</span
+								></label
+							>
+							<div class="checkbox-group">
+								<label class="checkbox-item"
+									><input type="checkbox" /><span
+										>Découvrir de nouveaux endroits</span
+									></label
+								>
+								<label class="checkbox-item"
+									><input type="checkbox" /><span
+										>Rencontrer des gens</span
+									></label
+								>
+								<label class="checkbox-item"
+									><input type="checkbox" /><span
+										>Faire du sport</span
+									></label
+								>
+								<label class="checkbox-item"
+									><input type="checkbox" /><span
+										>Participer à un événement
+										écologique</span
+									></label
+								>
+								<label class="checkbox-item"
+									><input type="checkbox" /><span
+										>Suivre un guide / thème culturel</span
+									></label
+								>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="f-comment"
+								>Vos suggestions ou idées</label
+							>
+							<textarea
+								id="f-comment"
+								placeholder="Partagez vos envies, besoins ou remarques…"
+							></textarea>
+						</div>
+						<button
+							type="button"
+							class="btn-submit"
+							onclick="submitForm()"
+						>
+							Envoyer ma réponse 🚲
+						</button>
+					</form>
+					<div id="form-success">
+						<div class="success-icon">🎉</div>
+						<h3>Merci pour votre participation !</h3>
+						<p>
+							Votre avis nous aide à améliorer le projet Lovélo
+							Rouen.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="footer-inner">
+				<div class="footer-brand">
+					<img src="logo.png" alt="Lovélo" class="footer-logo-img" />
+					<p>
+						Projet citoyen · Cycle Ingénieur<br />Rouen, 2024–2025
+					</p>
+				</div>
+				<nav class="footer-links">
+					<a href="#about">Projet</a>
+					<a href="#routes">Balades</a>
+					<a href="#app">Application</a>
+					<a href="#team">Équipe</a>
+					<a href="#questionnaire">Participer</a>
+				</nav>
+			</div>
+			<div class="footer-bottom">
+				<p>
+					© 2025 Lovélo Rouen — Projet étudiant sans vocation
+					commerciale
+				</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
